@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="hr">
+    
+    <head>
+      <title>Osnovna škola Stjepana Radića Bibinje</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial scale=1.0">
+      <meta name="description" content="Naš prvi projekt">
+      <meta name="author" content="Luciana Kresić i Katarina Stjepanović">   
+      <link rel="stylesheet" href="owd_projekt_kopija.css">
+    </head>
+    
+    <body>
+      <div class="stranica">
+        <a href="http://127.0.0.1:56743/projekt/index.html" >
+        <img src="os.jpg" alt="http://127.0.0.1:56743/projekt/index.html" class="logo">
+        </a>
+        <nav class="menu">
+          <ul>
+            <li><a href="#">Obavijesti</a></li>
+            <li class="drop1">
+              <a href="#">Nastava</a>
+                <div class="drop2">
+                  <p><a href="#">Raspored</a></p>
+                  <p><a href="#">Nastavnici</a></p>
+                </div>
+            </li>
+            <li class="drop3">
+              <a href="#">O školi</a>
+                <div class="drop4">
+                  <p><a href="#">Lokacija</a></p>
+                  <p><a href="#">Galerija</a></p>
+                  <p><a href="#">Kontakt</a></p>
+                  <p><a href="#">Povijest</a></p>
+                </div>
+            </li>
+            <li class="drop5">
+              <a href="#">Projekti</a>
+                <div class="drop6">
+                  <p><a href="#">Programi</a></p>
+                  <p><a href="#">Natječaji</a></p>
+                  <p><a href="#">Erasmus+</a></p>
+                </div>
+            </li>
+          </ul>
+        </nav>
+        <article class="article">
+          <h3>Podsjetnik!</h3>
+          <p>Molimo dobro proučite tablicu sa rasporedom aktivnosti, kako ne bi došlo do kolizija i ostalih nemogućnosti upisa aktivnosti.</p>
+        </article>
+        <table border="1" class="tablica">
+          <caption><h2>Izvannastavne aktivnosti u šk. god. 2023./2024.</h2></caption>
+            <tr>
+              <td></td>
+              <td><b>Aktivnost</b></td>
+              <td><b>Razred</b></td>
+              <td><b>Dan</b></td>
+              <td><b>Termin</b></td>
+              <td><b>Profesor</b></td>
+            </tr>
+            <tr>
+              <td>1.</td>
+              <td>Nogomet</td>
+              <td>3.-8.</td>
+              <td>Pon, pet</td>
+              <td>16:00-17:30</td>
+              <td>Petar Perić</td>
+            </tr>            
+            <tr>
+              <td>2.</td>
+              <td>Rukomet</td>
+              <td>3.-8.</td>
+              <td>Pon, sri</td>
+              <td>17:00-18:15</td>
+              <td>Ivan Ivić</td>
+            </tr>
+            <tr>
+              <td>3.</td>
+              <td>Odbojka</td>
+              <td>3.-8.</td>
+              <td>Uto, cet</td>
+              <td>16:00-17:15</td>
+              <td>Mia Mišić</td>
+            </tr>
+            <tr>
+              <td>4.</td>
+              <td>Ples</td>
+              <td>5.-8.</td>
+              <td>Uto, pet</td>
+              <td>15:30-16:45</td>
+              <td>Nika Horvat</td>
+            </tr>
+            <tr>
+              <td>5.</td>
+              <td>Dramska skupina</td>
+              <td>1.-8.</td>
+              <td>Srijeda</td>
+              <td>18:00-19:00</td>
+              <td>Anica Jelić</td>
+            </tr>
+            <tr>
+              <td>6.</td>
+              <td>Školski zbor</td>
+              <td>1.-8.</td>
+              <td>Cetvrtak</td>
+              <td>13:15-14:00</td>
+              <td>Denis Dugić</td>
+            </tr>
+            <tr>
+              <td>7.</td>
+              <td>Sigurnost na web-u</td>
+              <td>1.-8.</td>
+              <td>Petak</td>
+              <td>17:00-18:00</td>
+              <td>Karla Lozić</td>
+            </tr>
+
+        </table>
+          <br><br>
+          <form method="post" action="mailto:lkresic@ffzg.hr" enctype="text/plain" class="prijava">
+            <h3>Ovdje prijavite željene aktivnosti.</h3>
+            <fieldset>
+              <h3>Unesi svoje podatke:</h3>
+              <label for="Imeiprezime:">Ime i prezime:</label>
+              <input type="text"
+               id="Imeiprezime" name="Imeiprezime" placeholder="Unesi svoje ime i prezime" required>
+              <br><br>
+              <label for="Razred:">Razred:</label>
+              <input type="number" name="Razred" id="Razred" placeholder="Unesi svoj razred" required>
+              <br>
+              <h3>Odaberi aktivnost</h3>
+              <input type="checkbox" id="nogomet" name="nogomet">
+              <label for="nogomet">Nogomet</label>
+              <br>
+              <input type="checkbox" id="rukomet" name="rukomet">
+              <label for="rukomet">Rukomet</label>
+              <br>
+              <input type="checkbox" id="odbojka" name="odbojka">
+              <label for="odbojka">Odbojka</label>
+              <br>
+              <input type="checkbox" id="ples" name="ples">
+              <label for="ples">Ples</label>
+              <br>
+              <input type="checkbox" id="dramska" name="dramska"> 
+              <label for="dramska">Dramska</label>
+              <br>
+              <input type="checkbox" id="zbor" name="zbor"> 
+              <label for="zbor">Školski zbor</label>
+              <br>
+              <input type="checkbox" id="sigurnost" name="sigurnost">
+              <label for="sigurnost">Sigurnost na web-u</label>
+              <br><br>
+              <input type="submit" value="Upiši me">
+            </fieldset> 
+          </form>
+       <img src="os5.jpg" alt="izvannastavne" class="slika">
+      </div>
+    </body>
+
+
+</html>

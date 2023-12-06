@@ -1,0 +1,214 @@
+@media only screen and (max-width: 912px) {
+  .hero-image-main {
+    min-height: 50vh;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .hero-image-main {
+    min-height: 30vh;
+  }
+}
+
+.stranica{
+  position: relative;
+  padding: 10px;
+  background-color: #FFF;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: auto auto auto 4fr;
+  grid-template-areas: "naslov naslov naslov"
+    "logo slika1 lokacija"
+    "izvan menu pretrazi"
+    ". glavni ."
+    ". glavni2 ."
+    ". glavni3 ."
+    ". contact .";
+  grid-gap: 5px;
+  width: 98%;
+  margin: auto;
+}
+
+.logo{
+  grid-area: logo;
+  text-align: center;
+  margin: auto;
+  border-radius: 50%;
+  background-color: #E8E8E8;
+  padding: 10px;
+}
+
+.naslov{
+  grid-area: naslov;
+  color: #034694;
+  background-color: #E8E8E8;
+  font-family: Palatino, serif;
+  font-size: 40px;
+  font-style: oblique;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+}
+
+.slika1{
+  grid-area: slika1;
+  border-radius: 8px;
+}
+
+.lokacija{
+  grid-area: lokacija;
+  color: #034694;
+  background-color: #E8E8E8;
+  text-align: center;
+  margin-top: center; 
+}
+
+.izvan{
+  grid-area: izvan;
+  text-align: center;
+  background-color: #E8E8E8;
+}
+
+
+.pretrazi{
+  grid-area: pretrazi;
+  background-color: #E8E8E8;
+  text-align: left;
+}
+
+.glavni{
+  grid-area: glavni;
+  background-color: #E8E8E8;
+  text-align: center;
+}
+
+.glavni2{
+  grid-area: glavni2;
+  background-color: #E8E8E8;
+  text-align: center;
+}
+
+.glavni3{
+  grid-area: glavni3;
+  background-color: #E8E8E8;
+  text-align: center;
+}
+
+.contact {
+  grid-area: contact;
+  text-align: center;
+  background-color: #E8E8E8;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.contact h4 {
+  color: #034694;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contact p {
+  margin: 5px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+
+.menu{
+  grid-area: menu;
+  background-color: #E8E8E8;
+  font-family:sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.menu ul{
+  list-style: none;
+  margin: 5px;
+  padding: 5px;
+}
+
+.menu li{
+  display: inline;
+}
+
+.menu a:link, .menu a:visited{
+  margin: 4px;
+  padding: 3px 10px 3px 10px;
+  color: #FFF;
+  background-color: #034694;
+  text-decoration: none;
+  border-top: 2px solid #FFF;
+  border-left: 2px solid #FFF;
+  border-bottom: 2px solid #FFF;
+  border-right: 2px solid #FFF;
+}
+
+.menu a:hover{
+  color: black;
+  background-color: #318CE7;
+  border-top: 2px solid #2F4F4F;
+  border-left: 2px solid #2F4F4F;
+  border-bottom: 2px solid #2F4F4F;
+  border-right: 2px solid #2F4F4F;
+}
+
+.drop1{
+  position: relative;
+  display: inline-block;
+}
+
+.drop2{
+  display: none;
+  position: absolute;
+  padding: 15px 90px;
+  z-index: 1;
+}
+
+.drop1:hover .drop2{
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 40%;
+  transform: translateX(-30%);
+}
+
+.drop3{
+  position: relative;
+  display: inline-block;
+}
+
+.drop4{
+  display: none;
+  position: absolute;
+  padding: 15px 90px;
+  z-index: 1;
+}
+
+.drop3:hover .drop4{
+  display: block;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  transform: translateX(-30%);
+}
+
+.drop5{
+  position: relative;
+  display: inline-block;
+}
+
+.drop6{
+  display: none;
+  position: absolute;
+  padding: 15px 90px;
+  z-index: 1;
+}
+
+.drop5:hover .drop6{
+  display: block;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  transform: translateX(-30%);
+}
